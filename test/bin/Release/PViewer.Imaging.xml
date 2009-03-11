@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PViewer.Imaging</name>
+    </assembly>
+    <members>
+        <member name="T:PViewer.Imaging.DirectoryImageCollection">
+            <summary>
+            Represent a collection of images in the same local directory.
+            </summary>
+        </member>
+        <member name="T:PViewer.Imaging.ImageCollection">
+            <summary>
+            Represent a collection of images.
+            </summary>
+        </member>
+        <member name="M:PViewer.Imaging.DirectoryImageCollection.Collect(System.String)">
+            <summary>
+            Collect images by specified filename.
+            </summary>
+            <param name="fileName"></param>
+        </member>
+        <member name="M:PViewer.Imaging.DirectoryImageCollection.Collect(System.IO.DirectoryInfo)">
+            <summary>
+            Collect images in specified directory.
+            </summary>
+            <param name="di"></param>
+        </member>
+        <member name="M:PViewer.Imaging.DirectoryImageCollection.FindNextCollection(System.Int32)">
+            <summary>
+            To create another image collection based on current directory position.
+            </summary>
+            <param name="direction">the amount for going forward (&gt;0) or backward (&lt;0)</param>
+            <returns></returns>
+        </member>
+        <member name="P:PViewer.Imaging.DirectoryImageCollection.Directory">
+            <summary>
+            The directory of images.
+            </summary>
+        </member>
+        <member name="E:PViewer.Imaging.DirectoryImageCollection.ImageCollected">
+            <summary>
+            This event is fired when image collecting is done.
+            </summary>
+        </member>
+        <member name="T:PViewer.Imaging.ImageDrawer">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:PViewer.Imaging.ImageInfo">
+            <summary>
+            This class contains various information for a single image.
+            </summary>
+        </member>
+        <member name="T:PViewer.Imaging.ImageNavigator">
+            <summary>
+            To manage the navigation of images.
+            </summary>
+        </member>
+        <member name="T:PViewer.Imaging.ImageOp">
+            <summary>
+            Summary description for ImageOp.
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,11 @@
+bin\Debug\PViewer.exe
+bin\Debug\PViewer.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\PViewer.Properties.Resources.resources
+obj\Debug\PViewer.csproj.GenerateResource.Cache
+obj\Debug\PViewer.exe
+obj\Debug\PViewer.pdb
+obj\Debug\PViewer.MainForm.resources
+bin\Debug\PViewer.Imaging.dll
+bin\Debug\PViewer.Imaging.pdb
+obj\Debug\PViewer.AboutForm.resources

@@ -1,0 +1,268 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2AEBACC7-791B-447C-B22A-3EFE302A84A1}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>App.ico</ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>PViewer</AssemblyName>
+    <AssemblyOriginatorKeyFile>patrick.snk</AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PViewer</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <SignAssembly>true</SignAssembly>
+    <ManifestCertificateThumbprint>B2E498055D3B7757AAC180BF8369AB4CB9928B1F</ManifestCertificateThumbprint>
+    <ManifestKeyFile>PViewer.pfx</ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <SignManifests>true</SignManifests>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <PublishUrl>http://localhost:8088/pviewer/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Background</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <SupportUrl>http://baby.homeip.net/patrick/</SupportUrl>
+    <ProductName>PViewer</ProductName>
+    <PublisherName>Patrick Tsai</PublisherName>
+    <WebPage>index.htm</WebPage>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <ProjectReference Include="..\..\..\PViewer.Imaging\src\pc\PViewer.Imaging.csproj">
+      <Project>{54AAC0D6-EAFE-4789-9BBF-41B6336E2697}</Project>
+      <Name>PViewer.Imaging</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\ThirdParty\XPBurnComponent\XPBurnComponent.csproj">
+      <Project>{F2B349EB-67F5-48E3-9BE2-EC5BA8F010C7}</Project>
+      <Name>XPBurnComponent</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AsciiArt.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BasePane.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BurningForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CursorChanger.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EffectsPane.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ExplorerPane.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ImageBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ImagePane.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ImagePropertiesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImageStatusBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="IService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MRU.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PaneCaption.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Preferences.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Program.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PViewerException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ServiceManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Set.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SizeMode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ThumbnailListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ThumbnailPane.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Utility.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ViewerPreference.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WindowSerializer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <EmbeddedResource Include="AboutForm.resx">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BurningForm.resx">
+      <DependentUpon>BurningForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EffectsPane.resx">
+      <DependentUpon>EffectsPane.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExplorerPane.resx">
+      <DependentUpon>ExplorerPane.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImageBox.resx">
+      <DependentUpon>ImageBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImagePane.resx">
+      <DependentUpon>ImagePane.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImagePropertiesForm.resx">
+      <DependentUpon>ImagePropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MRU.resx">
+      <DependentUpon>MRU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PaneCaption.resx">
+      <DependentUpon>PaneCaption.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PViewer.resx" />
+    <EmbeddedResource Include="ThumbnailListView.resx">
+      <DependentUpon>ThumbnailListView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThumbnailPane.resx">
+      <DependentUpon>ThumbnailPane.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WindowSerializer.resx">
+      <DependentUpon>WindowSerializer.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="patrick.snk" />
+    <None Include="PViewer.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Debug\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

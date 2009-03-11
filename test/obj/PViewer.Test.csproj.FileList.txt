@@ -1,0 +1,3 @@
+obj\Debug\ResolveAssemblyReference.cache
+obj\Release\ResolveAssemblyReference.cache
+obj\Release\PViewer.Test.dll

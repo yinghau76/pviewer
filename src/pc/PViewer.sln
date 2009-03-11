@@ -1,0 +1,45 @@
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PViewer", "PViewer.csproj", "{2AEBACC7-791B-447C-B22A-3EFE302A84A1}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup", "..\..\setup\Setup.vdproj", "{56B069F4-B80C-4A48-A2C8-72EAE24426F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PViewer.Test", "..\..\test\PViewer.Test.csproj", "{6E8A2120-417A-4A63-9C12-08C75F7A7B92}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PViewer.Imaging", "..\..\..\PViewer.Imaging\src\pc\PViewer.Imaging.csproj", "{54AAC0D6-EAFE-4789-9BBF-41B6336E2697}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XPBurnComponent", "..\..\..\ThirdParty\XPBurnComponent\XPBurnComponent.csproj", "{F2B349EB-67F5-48E3-9BE2-EC5BA8F010C7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C621E032-500A-42DE-92E4-B43B63FA6025}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2AEBACC7-791B-447C-B22A-3EFE302A84A1}.Debug|Default.ActiveCfg = Debug|Any CPU
+		{2AEBACC7-791B-447C-B22A-3EFE302A84A1}.Debug|Default.Build.0 = Debug|Any CPU
+		{2AEBACC7-791B-447C-B22A-3EFE302A84A1}.Release|Default.ActiveCfg = Release|Any CPU
+		{2AEBACC7-791B-447C-B22A-3EFE302A84A1}.Release|Default.Build.0 = Release|Any CPU
+		{56B069F4-B80C-4A48-A2C8-72EAE24426F9}.Debug|Default.ActiveCfg = Release
+		{56B069F4-B80C-4A48-A2C8-72EAE24426F9}.Release|Default.ActiveCfg = Release
+		{56B069F4-B80C-4A48-A2C8-72EAE24426F9}.Release|Default.Build.0 = Release
+		{6E8A2120-417A-4A63-9C12-08C75F7A7B92}.Debug|Default.ActiveCfg = Debug|Any CPU
+		{6E8A2120-417A-4A63-9C12-08C75F7A7B92}.Release|Default.ActiveCfg = Release|Any CPU
+		{54AAC0D6-EAFE-4789-9BBF-41B6336E2697}.Debug|Default.ActiveCfg = Debug|Any CPU
+		{54AAC0D6-EAFE-4789-9BBF-41B6336E2697}.Debug|Default.Build.0 = Debug|Any CPU
+		{54AAC0D6-EAFE-4789-9BBF-41B6336E2697}.Release|Default.ActiveCfg = Release|Any CPU
+		{54AAC0D6-EAFE-4789-9BBF-41B6336E2697}.Release|Default.Build.0 = Release|Any CPU
+		{F2B349EB-67F5-48E3-9BE2-EC5BA8F010C7}.Debug|Default.ActiveCfg = Debug|Any CPU
+		{F2B349EB-67F5-48E3-9BE2-EC5BA8F010C7}.Debug|Default.Build.0 = Debug|Any CPU
+		{F2B349EB-67F5-48E3-9BE2-EC5BA8F010C7}.Release|Default.ActiveCfg = Release|Any CPU
+		{F2B349EB-67F5-48E3-9BE2-EC5BA8F010C7}.Release|Default.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(DPCodeReviewSolutionGUID) = preSolution
+		DPCodeReviewSolutionGUID = {00000000-0000-0000-0000-000000000000}
+	EndGlobalSection
+EndGlobal

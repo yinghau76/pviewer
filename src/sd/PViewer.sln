@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PViewer", "PViewer.csproj", "{DD599224-96C1-4B84-95DC-5BA648126572}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PViewer.Imaging", "..\..\..\PViewer.Imaging\src\sd\PViewer.Imaging.csproj", "{BB0675CA-43A4-4E63-B91F-5A61EF01EA73}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DD599224-96C1-4B84-95DC-5BA648126572}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD599224-96C1-4B84-95DC-5BA648126572}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD599224-96C1-4B84-95DC-5BA648126572}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{DD599224-96C1-4B84-95DC-5BA648126572}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD599224-96C1-4B84-95DC-5BA648126572}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD599224-96C1-4B84-95DC-5BA648126572}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{BB0675CA-43A4-4E63-B91F-5A61EF01EA73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB0675CA-43A4-4E63-B91F-5A61EF01EA73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB0675CA-43A4-4E63-B91F-5A61EF01EA73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB0675CA-43A4-4E63-B91F-5A61EF01EA73}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

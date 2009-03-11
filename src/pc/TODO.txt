@@ -1,0 +1,34 @@
+General:
+	* BUG: handle exception during thumbnail generation.
+	* BUG: Arrow key does not work.
+	* Option dialog to customize various behaviors.
+	* Set an image as Desktop background.
+
+Importing:
+	* Use pluggable importer.
+		
+Editing:
+	* Add Editing perspective and pluggable effect.
+	* To export edited image.
+	* Use pluggable exporter.
+	* Change image hue, saturation, lightness, contrast and adjust colors.
+ 	* Scale and rotate images.
+	* JPEG lossless transformations.
+		
+Viewing:
+    * Pluggable transition effect.
+    * View EXIF data attached to JPEG images.
+    * View images rotated, flipped, in black and white.
+    * The four corners of selection rectangle can be dragged.
+    * Image can be scrolled by dragging the image with Ctrl pressed.
+	* Display histogram.
+	* A better interface to show EXIF data.
+	* Zoom-in/out should keep the current view point.
+	* Album perspective
+	* Automatically update the content of a folder.
+	* Copy, move, delete images and folders.
+
+Organizing:
+	* Store all the operations we apply to an image.
+	* Store tag.
+
